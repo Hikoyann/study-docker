@@ -1,6 +1,6 @@
 
 source "https://rubygems.org"
 
-git_sourec(:github) {|repo_name|"https://githb.com/#{repo_name}"}
+git_source(:github) {|repo_name|"https://githb.com/#{repo_name}"}
 
 gem "sinatra"

@@ -4,4 +4,8 @@ WORKDIR /var/www
 
 COPY ./src /var/www/
 
-CMD ["/bin/bash"]
+RUN bundle config --locla set path 'vendor/bundel'
+
+RUN bundle install
+
+CMD ["bundle", "exec", "ruby", "app.rb"]
